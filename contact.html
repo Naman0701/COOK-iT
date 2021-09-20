@@ -18,59 +18,152 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">🥣COOK iT🍲</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="/Cook_iT.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/contact.html" target="blank">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Admission OPEN!!<span class="badge bg-danger mx-2">🔥 HOT
-                                🔥</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Other Services
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item"
-                                    href="/about.html"
-                                    target="blank">NYC Campus</a></li>
-                            <li><a class="dropdown-item"
-                                    href="/about.html"
-                                    target="blank">Los Angeles Campus</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Long Distance Programs</a></li>
-                        </ul>
-                    </li>
-
+          <a class="navbar-brand" href="#">🥣COOK iT🍲</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="/Cook_iT.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Admission OPEN!!<span class="badge bg-danger mx-2">🔥 HOT
+                    🔥</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Other Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/about.html">NYC Campus</a></li>
+                  <li><a class="dropdown-item" href="/about.html">Los Angeles Campus</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Long Distance Programs</a></li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
-                </form>
-                <div class="mx-2">
-                    <button class="btn btn-primary">Login</button>
-                    <button class="btn btn-warning">SignUp</button>
-                </div>
+              </li>
+    
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Login_Modal">
+                Login</button>
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#SignUP_Modal">
+                SignUp</button>
             </div>
+          </div>
         </div>
-    </nav>
-
+      </nav>
+      <!-- Login Modal -->
+    
+    <div class="modal fade" id="Login_Modal" tabindex="-1" aria-labelledby="Login_ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Login_ModalLabel">Log in to 🥣COOK iT🍲</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="userEmail1" class="form-label">Registered Email address</label>
+                <input type="email" class="form-control" id="userEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="userPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="userPassword">
+              </div>
+              <div class="mb-1">
+                <label class="form-check-label"><a href="#">Forgot Password</a></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Log In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- SignUp modal -->
+    
+    <div class="modal fade" id="SignUP_Modal" tabindex="-1" aria-labelledby="SignUP_ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SignUP_ModalLabel">Sign Up (students only)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="InputName" class="form-label">Enter Name</label>
+                <input type="text" class="form-control" id="InputName">
+              </div>
+              <div class="mb-3">
+                <label for="InputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="InputPh" class="form-label">Contact number</label>
+                <input type="tel" class="form-control" id="InputPh" placeholder="1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="12" aria-describedby="PhHelp">
+                <div id="PhHelp" class="form-text">We'll never share your contact info with anyone else.</div>
+              </div>
+              Gender: 
+              <div class="form-check form-check-inline mx-1">
+                  <input class="form-check-input" type="radio" name="Gender" id="RB1">
+                  <label class="form-check-label" for="RB1">
+                      Male
+                  </label>
+              </div>
+              <div class="form-check form-check-inline mx-1">
+                  <input class="form-check-input" type="radio" name="Gender" id="RB2" >
+                  <label class="form-check-label" for="RB2">
+                      Female
+                  </label>
+              </div>
+              <div class="form-check form-check-inline mx-1">
+                  <input class="form-check-input" type="radio" name="Gender" id="RB3">
+                  <label class="form-check-label" for="RB3">
+                      Other
+                  </label>
+              </div>
+              <div class="form-check form-check-inline mx-1">
+                  <input class="form-check-input" type="radio" name="Gender" id="RB4" >
+                  <label class="form-check-label" for="RB4">
+                      Prefer not to say
+                  </label>
+              </div>
+              <div class="mb-3 form-check mx-1 my-4">
+                <input type="checkbox" class="form-check-input" id="TnC">
+                <label class="form-check-label" for="TnC">I've read and agree all <a href="#"> TERMS AND CONDITIONS</a></label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     
 <h2 class="mx-4 my-4">CONTACT US......</h2>
     <div class="container">
         <form>
